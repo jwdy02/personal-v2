@@ -1,0 +1,99 @@
+/* 상단영역 */
+header{   /* 너비지정 */
+  margin: 0 auto; /* 중앙정렬 */
+  background-color: rgb(0, 19, 42,0.5);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  animation-name: headerA;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes headerA{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+header .wrap{  
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header h1{
+
+}
+header h1 a{
+
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+header ul{
+  display: flex;
+  gap: 79px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+header ul li{
+
+}
+header ul li a{
+  text-transform: uppercase;
+  color: white;
+}
+header ul li:hover a{  
+  text-shadow: 0 0 15px white;
+}
+header div.wrap>a{
+  
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* 타이틀 영역 */
+div#title{
+  background-color: #eee;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1549074862-6173e20d02a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  height: 100%;
+}
+div#title div.wrap{ /* 하위선택자 */
+  width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+div#title div.wrap h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 10px;
+}
+div#title div.wrap p {
+  font-size: 37px;
+}
